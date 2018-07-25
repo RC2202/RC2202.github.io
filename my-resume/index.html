@@ -1,99 +1,112 @@
 <!DOCTYPE html><html><head><meta charset="UTF-8">
-<title>Resume</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Raleway:500,200,700" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
-
-<link href="https://unpkg.com/material-resume@1.0.1/resume.min.css" rel="stylesheet">
-<script src="https://unpkg.com/material-resume@1.0.1/resume.min.js"></script>
-
-</head><body ng-app="Resume" ng-cloak="">
-    <resume>
-        <resume-heading first-name="Rahul" last-name="Choudhary" linkedin="rahulchoudhary1813" email="rahulchoudhary1813@gmail.com" phone="+91-9766956196">
-        </resume-heading>
-        <resume-body>
-            <resume-column flex="20">
-                <sidebar-category name="Education">
-                    <p>Visvesaraya National Institute of Technology</p>
-                    <p>Bachelor in Technology, May 2016</p>
-                    <p>Electrical and Electronics Engineering</p>
-                    <p>GPA - 8.22/10</p>
-                </sidebar-category>
-                
-            </resume-column>
-            <resume-column flex="80">
-                <category name="Professional Experience">
-                    <category-item title="Electrical Design Engineer" subtitle="Ecofrost Technologies Pvt. Ltd. (Feb-2018 - Present)">
-                        <li>Design and debug power electronics converters and other electrical related issues</li>
-                        <li>Implementation of MPPT for battery charging and driving pump from PV array</li>
-                        <li>Design and sizing of components for control panel of Ecofrost (Cold Storage)</li>
-                    </category-item>
-                    <category-item title="System Engineer" subtitle="Tata Consultancy Services (June 2016 - Feb 2018)">
-                        <li>Development of Hybrid mobile applications for clients</li>
-                        <li>POC in latest technologies, IOT</li>
-                    </category-item>
-                </category>
-                <category name="Publication and Patents">
-                    <category-item title="" subtitle="Patent">
-                        <li>Rahul Choudhary, Dr. Bhimrao Sitaram Umre, Sunil Maniklal Mutha, <b>‘Design & Development of an Intelligent fault
-                            tracking system using optical fiber cable in Railway Tracks’</b>, Indian Patent, Patent no.-201621028077</li>
-                    </category-item>
-                    <category-item title="" subtitle="Journal">
-                        <li>Rahul Choudhary, H M Suryawanshi, Girish.G.Talapur, M A Chaudhari, A B Shitole, <b>‘Modified cascaded multilevel
-                            inverter structure with reduced voltage stress across H-bridge for high voltage application’</b>, Electric Power
-                            Components and Systems Journal (Accepted)</li>
-                        
-                    </category-item>
-                    <category-item title="" subtitle="Conference">
-                        <li>Rahul Choudhary, Indrajit Sarkar <b>‘Five level transistor clamped multilevel inverter’</b>, 6th IEEE International
-                            Conference of Power System (ICPS) 2016</li>
-                        <li>Rahul Choudhary, H M Suryawanshi, M A Chaudhari, Girish.G.Talapur, A B Shitole, <b>‘Modified multilevel topology
-                            for grid integration of high power solar PV system'</b>, IEEE-APPEEC 2017</li>
-                        <li>Girish.G.Talapur, H M Suryawanshi, Rohit Deshmukh, Makarand Ballal, Rahul Choudhary, <b>‘Hybrid Control
-                            Technique for Load Sharing and Seamless Transition in Microgrid Mode of Operation’</b>, IEEE-PEDES 2018 (Under
-                            Review)</li>
-                    </category-item>
-                </category>
-
-                <category name="Course Certificates ">
-                    <category-item title="" subtitle="MOOCs">
-                        <li>Power Electronics Specialization, University of Colorado Boulder (made available through) Coursera</li>
-                        <li>6.002.3X Circuits and Electronics: Applications, Massachusetts Institute of Technology (made available through) Edx</li>
-                        <li>Machine Learning, Stanford University (made available through) Coursera </li>
-                    </category-item>
-                </category>
-
-                <category name="Projects">
-                    <!-- <category-item title="Grid synchronized 7 level T-cell single phase inverter" subtitle="under Dr. H M Suryawanshi, Professor,
-                    VNIT"></category-item>
-                    <category-item title="Reduced switch topology for 7 level inverter" subtitle="under Dr. H M Suryawanshi, Professor,
-                    VNIT"></category-item>
-                    <category-item title="Multiband Hysteresis current control for cascaded multilevel inverter" subtitle="under Dr. B G Fernandes,
-                    Professor, IIT Bombay"></category-item>
-                    <category-item title="Detection of fault in railway track using Optical Fiber" subtitle="under Dr. B S Umre, Professor,
-                    VNIT"></category-item>
+    <title>Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500,200,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+    
+    <link href="https://unpkg.com/material-resume@1.0.1/resume.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-resume@1.0.1/resume.min.js"></script>
+    
+    </head><body ng-app="Resume" ng-cloak="">
+        <resume>
+            <resume-heading first-name="Rahul" last-name="Choudhary" linkedin="rahulchoudhary1813" email="rahulchoudhary1813@gmail.com" phone="+91-9766956196">
+            </resume-heading>
+            <resume-body>
+                <resume-column flex="20">
+                    <sidebar-category name="Education">
+                        <p>Visvesaraya National Institute of Technology</p>
+                        <p>Bachelor in Technology, May 2016</p>
+                        <p>Electrical and Electronics Engineering</p>
+                        <p>GPA - 8.22/10</p>
+                    </sidebar-category>
                     
-                    <category-item title="Two wheeled self-balancing robot" subtitle="under Dr. M A Choudhary, Professor, VNIT"></category-item>
-                         -->
-                    <category-item title="" subtitle="During Undergraduation">
-                        <li>Grid synchronized 7 level T-cell single phase inverter, under Dr. H M Suryawanshi, Professor, VNIT</li>
-                        <li>Reduced switch topology for 7 level inverter, under Dr. H M Suryawanshi, Professor, VNIT</li>
-                        <li>Multiband Hysteresis current control for cascaded multilevel inverter, under Dr. B G Fernandes, Professor, IIT Bombay</li>
-                        <li>Detection of fault in railway track using Optical Fiber, under Dr. B S Umre, Professor, VNIT </li>
-                        <li>Two wheeled self-balancing robot, under Dr. M A Choudhary, Professor, VNIT</li>
-                    </category-item>
-                   
-                </category>
-                
-            </resume-column>
-        </resume-body>
-    </resume>
-
-
-</body></html>
+                </resume-column>
+                <resume-column flex="80">
+                    <category name="Professional Experience">
+                        <category-item title="Electrical Design Engineer" subtitle="Ecofrost Technologies Pvt. Ltd. (Feb-2018 - Present)">
+                            <li>Design and debug power electronics converters and other electrical related issues</li>
+                            <li>Implementation of MPPT for battery charging and driving pump from PV array</li>
+                            <li>Design and sizing of components for control panel of Ecofrost (Cold Storage)</li>
+                        </category-item>
+                        <category-item title="System Engineer" subtitle="Tata Consultancy Services (June 2016 - Feb 2018)">
+                            <li>Development of Hybrid mobile applications for clients</li>
+                            <li>POC in latest technologies, IOT</li>
+                        </category-item>
+                    </category>
+                    <category name="Publication and Patents">
+                        <category-item title="" subtitle="Patent">
+                            <li>Rahul Choudhary, Dr. Bhimrao Sitaram Umre, Sunil Maniklal Mutha, <b>‘Design & Development of an Intelligent fault
+                                tracking system using optical fiber cable in Railway Tracks’</b>, Indian Patent, Patent no.-201621028077</li>
+                        </category-item>
+                        <category-item title="" subtitle="Journal">
+                            <li>Rahul Choudhary, H M Suryawanshi, Girish.G.Talapur, M A Chaudhari, A B Shitole, <b>‘Modified cascaded multilevel
+                                inverter structure with reduced voltage stress across H-bridge for high voltage application’</b>, Electric Power
+                                Components and Systems Journal (Accepted)</li>
+                            
+                        </category-item>
+                        <category-item title="" subtitle="Conference">
+                            <li>Rahul Choudhary, Indrajit Sarkar <b>‘Five level transistor clamped multilevel inverter’</b>, 6th IEEE International
+                                Conference of Power System (ICPS) 2016</li>
+                            <li>Rahul Choudhary, H M Suryawanshi, M A Chaudhari, Girish.G.Talapur, A B Shitole, <b>‘Modified multilevel topology
+                                for grid integration of high power solar PV system'</b>, IEEE-APPEEC 2017</li>
+                            <li>Girish.G.Talapur, H M Suryawanshi, Rohit Deshmukh, Makarand Ballal, Rahul Choudhary, <b>‘Hybrid Control
+                                Technique for Load Sharing and Seamless Transition in Microgrid Mode of Operation’</b>, IEEE-PEDES 2018 (Under
+                                Review)</li>
+                        </category-item>
+                    </category>
+    
+                    <category name="Course Certificates ">
+                        <category-item title="" subtitle="MOOCs">
+                            <li>Power Electronics Specialization, University of Colorado Boulder (made available through) Coursera</li>
+                            <li>6.002.3X Circuits and Electronics: Applications, Massachusetts Institute of Technology (made available through) Edx</li>
+                            <li>Machine Learning, Stanford University (made available through) Coursera </li>
+                        </category-item>
+                    </category>
+    
+                    <category name="Projects">
+                        <!-- <category-item title="Grid synchronized 7 level T-cell single phase inverter" subtitle="under Dr. H M Suryawanshi, Professor,
+                        VNIT"></category-item>
+                        <category-item title="Reduced switch topology for 7 level inverter" subtitle="under Dr. H M Suryawanshi, Professor,
+                        VNIT"></category-item>
+                        <category-item title="Multiband Hysteresis current control for cascaded multilevel inverter" subtitle="under Dr. B G Fernandes,
+                        Professor, IIT Bombay"></category-item>
+                        <category-item title="Detection of fault in railway track using Optical Fiber" subtitle="under Dr. B S Umre, Professor,
+                        VNIT"></category-item>
+                        
+                        <category-item title="Two wheeled self-balancing robot" subtitle="under Dr. M A Choudhary, Professor, VNIT"></category-item>
+                             -->
+                        <category-item title="" subtitle="During Undergraduation">
+                            <li>Grid synchronized 7 level T-cell single phase inverter, under Dr. H M Suryawanshi, Professor, VNIT</li>
+                            <li>Reduced switch topology for 7 level inverter, under Dr. H M Suryawanshi, Professor, VNIT</li>
+                            <li>Multiband Hysteresis current control for cascaded multilevel inverter, under Dr. B G Fernandes, Professor, IIT Bombay</li>
+                            <li>Detection of fault in railway track using Optical Fiber, under Dr. B S Umre, Professor, VNIT </li>
+                            <li>Two wheeled self-balancing robot, under Dr. M A Choudhary, Professor, VNIT</li>
+                        </category-item>
+                        
+                        
+                       
+                    </category>
+    
+                    <category name="Blog">
+                        <category-item title="" subtitle="commonelectricaldoubts.blogspot.in">
+                            <p>Blogging is my leisure time activity. It is my way of returning to the world what I have learned. Also it keeps the spark
+                                in me alive to learn more and give more. The blog content mainly includes small hobby projects related to automation,
+                                working of electronics stuffs and my industrial experiences. It also has technical contents from few of my enthusiastic
+                                friends</p>
+                        </category-item>
+                    </category>
+    
+                    
+                </resume-column>
+            </resume-body>
+        </resume>
+    
+    
+    </body></html>
+    
