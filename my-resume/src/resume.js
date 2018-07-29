@@ -91,7 +91,7 @@ angular.module('Resume', ['ngMaterial'])
   template: `<div class="category">
     <h5 class="category-title md-body-2">{{r.title}}</h5>&nbsp;
     <h5 ng-if ="!r.subtitle.includes('.in') class="category-subtitle md-caption" >{{r.subtitle}}</h5>
-    <a class="md-subhead page-subhead" ng-if ="r.subtitle.includes('.in')" ng-href="https://{{r.subtitle}}" target = "_blank">
+    <a class="md-subhead page-subhead" ng-if ="r.subtitle.includes('.com')" ng-href="https://{{r.subtitle}}" target = "_blank">
     <h5 class="category-subtitle md-caption" >{{r.subtitle}}</h5>
     </a>
     <ul class="category-bullets" ng-transclude></ul>
