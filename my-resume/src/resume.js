@@ -90,8 +90,8 @@ angular.module('Resume', ['ngMaterial'])
   transclude: true,
   template: `<div class="category">
     <h5 class="category-title md-body-2">{{r.title}}</h5>&nbsp;
-    <h5 ng-if ="!(r.subtitle.includes('.com')||r.subtitle.includes('.io'))" class="category-subtitle md-caption" >{{r.subtitle}}</h5>
-    <a class="md-subhead page-subhead" ng-if ="r.subtitle.includes('.com')||r.subtitle.includes('.io')" ng-href="https://{{r.subtitle}}" target = "_blank">
+    <h5 ng-if ="!(r.subtitle.includes('.com')||r.subtitle.includes('.io')||r.subtitle.includes('.in')||r.subtitle.includes('www'))" class="category-subtitle md-caption" >{{r.subtitle}}</h5>
+    <a class="md-subhead page-subhead" ng-if ="r.subtitle.includes('.com')||r.subtitle.includes('.io')||r.subtitle.includes('.in')||r.subtitle.includes('www')" ng-href="https://{{r.subtitle}}" target = "_blank">
     <h5 class="category-subtitle md-caption" >{{r.subtitle}}</h5>
     </a>
     <ul class="category-bullets" ng-transclude></ul>
